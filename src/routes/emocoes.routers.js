@@ -23,7 +23,7 @@ let emocoes = [
 //Rota para buscar todas as emoções 
 emocoesRoutes.get("/", (req, res) => {
     return res.status(200).send(emocoes)
-})
+});
 
 //Rota para criar uma nova emoção
 emocoesRoutes.post("/", (req, res) => {
@@ -97,4 +97,4 @@ emocoesRoutes.delete("/:id", (req, res) => {
     });
 });
 
-export default emocoesRoutes
+export default emocoesRoutes;
